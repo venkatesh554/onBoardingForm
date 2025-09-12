@@ -1,0 +1,38 @@
+.child{
+    position:relative;
+    top:-10%;left:50%;
+}
+span{
+  color: red;
+}
+label{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+}
+input{
+   
+  border: 1px solid rgb(174, 166, 166);
+  border-radius: 5px;
+  height: 30px;
+  width: 300px;
+}
+
+.right-image img{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    left: 70%;
+    top: -480px;
+    opacity: 0.9;
+}
+form button{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+    position: relative;
+    left: 0%;
+    top: 20px;
+}
