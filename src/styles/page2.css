@@ -1,0 +1,99 @@
+
+#formm{
+    position:relative;
+    top:-50px
+}
+
+h1{
+    position:relative;
+    top:20px;
+}
+
+  #small-label{
+    position:relative;
+    top:-30px;
+    color:grey;
+    font-size:12px;
+    left:80px;
+    
+}
+
+.input-field
+{
+    position:relative;
+    top:40px;
+}
+.label-field{
+    position:relative;
+    top:30px;
+}
+#btn{
+    position:relative;
+    top:-380px;
+}
+.first-column{
+    
+}
+.column-second{
+    position: relative;
+    top:-100px;
+}
+.column-three{
+    position: relative;
+    top:-200px;
+}
+.column-four{
+    position: relative;
+    top:-300px;
+}
+
+.flexing{
+    display: flex;
+    gap: 0px;
+    position:relative;
+    top:-100px;
+    left:300px;
+}
+.small-input{
+    width:150px;
+    height:30px;
+    margin-top:106px;
+    margin-left:-10px;
+}
+#flex1{
+    width:200px;
+    position:relative;
+    left:-20px;
+}
+#flex2{
+    width:200px;
+    position:relative;
+    left:-20px;
+}
+
+#flex3{
+    width:200px;
+    position:relative;
+    left:-20px;
+}
+#flex4{
+    width:200px;
+    position:relative;
+    left:-20px;
+}
+.flexing3{
+    margin-left:-15px;
+}
+#back-btn{
+    position:relative;
+    top:-380px;
+    width:105px;
+    left:105px;
+}
+#next-btn{
+    position:relative;
+    top:-380px;
+    left:160px;
+    width:105px;
+} 
+ 

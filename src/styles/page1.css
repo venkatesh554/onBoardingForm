@@ -1,6 +1,14 @@
 .child{
     position:relative;
-    top:-10%;left:50%;
+    top:-40px;left:43%;
+}
+#left-child{
+    position:absolute;
+    top:-10px;
+    left:20%;
+}
+body{
+    overflow-x: hidden;
 }
 span{
   color: red;

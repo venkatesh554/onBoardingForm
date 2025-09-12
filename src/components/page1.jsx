@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/page1.css';
 import img2 from "./img2.jpg";
+import {useNavigate} from 'react-router-dom'
+import Page2 from './page2'
+
 
 export default function Page1() {
+    const navigate=useNavigate();
+       
 
     const [name, setName] = useState("");
     const [mobile, setMobile] = useState("");
@@ -16,6 +21,8 @@ export default function Page1() {
     const isValidEmail = (email) => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
     const isValidAddress = (address) => address.trim() !== '';
     const isValidDob = (dob) => dob !== '';
+
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -73,11 +80,12 @@ export default function Page1() {
         setEmail('');
         setDob('');
         setAddress('');
+            navigate("/page2")
     };
 
     return (
         <div className="parent">
-            <div className="child">
+            <div className="child" id="left-child">
                 <h1>Future Invo Solutions</h1>
                 <p>Employee OnBoarding Form</p>
                 <form onSubmit={handleSubmit}>
@@ -130,7 +138,7 @@ export default function Page1() {
                         onChange={(e) => setAddress(e.target.value)}
                     /><br />
 
-                    <button type="submit">Submit</button>
+                    <button type="submit" onClick={Page2} >Submit</button>
                 </form>
                 <div className="right-image">
                     <img src={img2} alt="form illustration" />
