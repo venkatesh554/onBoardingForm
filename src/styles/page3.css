@@ -1,0 +1,49 @@
+#bt{
+
+   width:80px;
+   height:30px;
+    position:relative;
+    top:0px;
+    left:-82px;
+    font-size:10px;
+    background-color: rgb(27, 161, 218);
+
+}
+#btt{
+        background-color: rgb(27, 161, 218);
+
+}
+.div1{
+    position:relative;
+    top:-150px;
+    left:260px;
+}
+
+#cards{
+width:2 0px;
+}
+.small-div1{
+    display:flex;
+}
+#icon{
+    position:relative;
+    left:-70px;
+    font-size:20px;
+}
+#mb{
+    font-size:13px;
+    position:relative;
+    top:-10px;
+    left:3px;
+}
+
+#back{
+    position:relative;
+    width:100px;
+    left:-300px;top:100px;
+}
+#front{
+    position:relative;
+    width:100px;
+    left:-200px;top:100px;
+}

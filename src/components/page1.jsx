@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/page1.css';
 import img2 from "./img2.jpg";
-import {useNavigate} from 'react-router-dom'
-import Page2 from './page2'
-
+import {useNavigate} from 'react-router-dom';
+import Page2 from "./page2"
 
 export default function Page1() {
     const navigate=useNavigate();
@@ -80,7 +79,7 @@ export default function Page1() {
         setEmail('');
         setDob('');
         setAddress('');
-            navigate("/page2")
+            navigate("/Page2")
     };
 
     return (

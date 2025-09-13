@@ -257,8 +257,12 @@
 import React, { useState } from 'react';
 import '../styles/page2.css';
 import { useNavigate } from 'react-router-dom';
+import Page1 from "./page1"
+import Page3 from "./page3"
 
 export default function Page2() {
+    const navigate=useNavigate()
+
     const [name, setName] = useState("");
     const [college, setCollege] = useState("");
     const [university, setUniversity] = useState("");
@@ -414,13 +418,11 @@ export default function Page2() {
     };
 
     const handleBack = () => {
-        alert("Back button clicked!");
-        // Implement navigation logic here if needed
+        navigate("/")
     };
 
     const handleNext = () => {
-        alert("Next button clicked!");
-        // Implement navigation logic here if needed
+       navigate("/Page3")
     };
 
     const handleOtherDocuments = () => {
@@ -442,15 +444,15 @@ export default function Page2() {
                         <div className="flexing">
                              
                              <div className="flexing1">
-                               <label id="small-label">Year of Passing</label>
+                               <label id="small-label">Year of Passing <span>*</span></label>
                                   <input type="number" className="small-input" value={year1} onChange={(e) => setYear1(e.target.value)} />
                              </div>
                              <div className="flexing2">
-                              <label id="small-label">Percentage</label>
+                              <label id="small-label">Percentage <span>*</span></label>
                               <input type="number" step="0.01" className="small-input" value={percentage1} onChange={(e) => setPercentage1(e.target.value)} />
                              </div>
                            <div className="flexing3">
-                                    <label id="small-label">Hall Ticket Number</label>
+                                    <label id="small-label">Hall Ticket Number <span>*</span></label>
                                      <input type="number" className="small-input" value={hallTicket1} id="flex1" onChange={(e) => setHallTicket1(e.target.value)} />
 
                            </div>
@@ -467,16 +469,16 @@ export default function Page2() {
                             <div className="flexing">
 
                          <div className="flexing1">
-                              <label id="small-label">Year of Passing</label>
+                              <label id="small-label">Year of Passing <span>*</span></label>
                                  <input type="number" className="small-input" value={year2} onChange={(e) => setYear2(e.target.value)} />
                          </div>
                          <div className="flexing2">
 
-                               <label id="small-label">Percentage</label>
+                               <label id="small-label">Percentage <span>*</span></label>
                               <input type="number" step="0.01" className="small-input" value={percentage2} onChange={(e) => setPercentage2(e.target.value)} />
                          </div>
                          <div className="flexing3">
-                               <label id="small-label">Hall Ticket Number</label>
+                               <label id="small-label">Hall Ticket Number <span>*</span></label>
                               <input type="number" className="small-input" value={hallTicket2} id="flex2" onChange={(e) => setHallTicket2(e.target.value)} />
                          </div>
                         </div>
@@ -492,16 +494,16 @@ export default function Page2() {
 
                         <div className="flexing">
                               <div className="flexing1">
-                               <label id="small-label">Year of Passing</label>
+                               <label id="small-label">Year of Passing <span>*</span></label>
                                <input type="number" className="small-input" value={year3} onChange={(e) => setYear3(e.target.value)} />
                               </div>
                              <div className="flexing2">
-                               <label id="small-label">Percentage</label>
+                               <label id="small-label">Percentage <span>*</span></label>
                                <input type="number" step="0.01" className="small-input" value={percentage3} onChange={(e) => setPercentage3(e.target.value)} />
 
                                </div>
                                <div className="flexing3">
-                                  <label id="small-label">Hall Ticket Number</label>
+                                  <label id="small-label">Hall Ticket Number <span>*</span></label>
                                   <input type="number" className="small-input" value={hallTicket3} id="flex3" onChange={(e) => setHallTicket3(e.target.value)} />
                                </div>
 
@@ -517,16 +519,16 @@ export default function Page2() {
                         <div className="flexing">
 
                          <div className="flexing1">
-                              <label id="small-label">Year of Passing</label>
+                              <label id="small-label">Year of Passing <span>*</span></label>
                                  <input type="number" className="small-input" value={year4} onChange={(e) => setYear4(e.target.value)} />
                          </div>
                          <div className="flexing2">
 
-                               <label id="small-label">Percentage</label>
+                               <label id="small-label">Percentage <span>*</span></label>
                               <input type="number" step="0.01" className="small-input" value={percentage4} onChange={(e) => setPercentage4(e.target.value)} />
                          </div>
                          <div className="flexing3">
-                               <label id="small-label">Hall Ticket Number</label>
+                               <label id="small-label">Hall Ticket Number <span>*</span></label>
                               <input type="number" className="small-input" value={hallTicket4} id="flex4" onChange={(e) => setHallTicket4(e.target.value)} />
                          </div>
                         </div>
@@ -539,7 +541,7 @@ export default function Page2() {
                     <div className="button-container">
                         <button type="button" onClick={handleOtherDocuments} id="btn">Any Other Documentations</button>
                         <button type="button" onClick={handleBack} id="back-btn">Back</button>
-                        <button type="submit" id="next-btn">Next</button>
+                        <button type="submit" id="next-btn" onClick={handleNext}>Next</button>
                     </div>
                 </form>
             </div>

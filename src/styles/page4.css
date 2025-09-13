@@ -1,0 +1,32 @@
+.div11{
+    position:relative;
+    left:450px;
+    top:-100px;
+}
+
+h3{
+    position:relative;
+    left:160px;
+}
+p{
+    position:relative;
+    left:-70px;
+}
+#check{
+    position:relative;
+    top:20px;
+    left:-30px;
+}
+#h3{
+    position:relative;
+    top:-30px;
+    font-size:15px;
+}
+#sub{
+    width:305px;
+    height:40px;
+    position:relative;
+    left:110px;
+    color:white;
+    background-color: black;
+}
