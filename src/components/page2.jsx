@@ -284,7 +284,7 @@ export default function Page2() {
     const [percentage4, setPercentage4] = useState("");
     const [hallTicket4, setHallTicket4] = useState("");
 
-    // Validation functions
+    
     const isValidName = (value) => /^[A-Za-z\s]+$/.test(value);
     const isValidCollege = (value) => /^[A-Za-z\s]+$/.test(value);
     const isValidUniversity = (value) => /^[A-Za-z\s]+$/.test(value);
@@ -309,7 +309,7 @@ export default function Page2() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Validate all fields
+        
         if (!isValidName(name)) {
             alert("Please enter a valid name (letters and spaces only).");
             return;
@@ -375,7 +375,7 @@ export default function Page2() {
             return;
         }
 
-        // Save to localStorage
+    
         const usersData = {
             name,
             college,
@@ -398,7 +398,7 @@ export default function Page2() {
         localStorage.setItem("userData", JSON.stringify(usersData));
         alert("Data saved successfully!");
 
-        // Reset form fields
+        
         setName('');
         setCollege('');
         setUniversity('');

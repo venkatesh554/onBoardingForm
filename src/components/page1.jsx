@@ -14,7 +14,7 @@ export default function Page1() {
     const [dob, setDob] = useState("");
     const [address, setAddress] = useState("");
 
-    // Validation functions
+    
     const isValidName = (name) => /^[A-Za-z\s]+$/.test(name);
     const isValidMobile = (mobile) => /^[6-9]\d{9}$/.test(mobile);
     const isValidEmail = (email) => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);

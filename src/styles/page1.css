@@ -44,3 +44,61 @@ form button{
     left: 0%;
     top: 20px;
 }
+
+
+
+@media (max-width: 575.98px) {
+  .child {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+     max-height: 90vh; 
+    overflow-y: auto;
+    padding:0 1rem;
+  }
+
+  #left-child {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  label {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  input {
+    width: 90%;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  form button {
+    width: 92%;
+    height: 45px;
+    font-size: 18px;
+    top: 15px;
+    left: 0;
+  }
+
+  .right-image img {
+    position: static;
+    width: 92%;
+    height: auto;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    margin-top: 20px;
+  }
+
+  body {
+    overflow-x: hidden;
+     margin-top: 0;
+    padding-top: 0;
+  }
+}
